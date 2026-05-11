@@ -1,0 +1,44 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+=== SPI Slave Testbench ===
+
+--- TC1: Basic RX (master sends 0xA5) ---
+PASS  [TC1 output_data]  got=0xa5  expected=0xa5
+
+--- TC2: Basic TX (slave sends 0x3C) ---
+PASS  [ceived by master]  got=0x3c  expected=0x3c
+
+--- TC3: Full-duplex (TX=0x4E, RX=0xB7) ---
+PASS  [RX (output_data)]  got=0xb7  expected=0xb7
+PASS  [master RX (MISO)]  got=0x4e  expected=0x4e
+
+--- TC4: Two back-to-back frames under one CS ---
+PASS  [TC4 frame1 RX]  got=0x12  expected=0x12
+PASS  [TC4 frame1 MISO]  got=0xde  expected=0xde
+PASS  [TC4 frame2 RX]  got=0x34  expected=0x34
+PASS  [TC4 frame2 MISO]  got=0xad  expected=0xad
+
+--- TC5: CS abort mid-frame ---
+PASS  [eady after abort]  got=1  expected=1
+PASS  [nged after reset]  got=0x00  expected=0x00
+
+--- TC6: LOAD ignored while busy ---
+PASS  [ (all-zero MOSI)]  got=0x00  expected=0x00
+PASS  [y after transfer]  got=1  expected=1
+
+--- TC7: READY timing ---
+PASS  [ADY before frame]  got=1  expected=1
+PASS  [ during transfer]  got=0  expected=0
+PASS  [high after frame]  got=1  expected=1
+
+--- TC8: Boundary values ---
+PASS  [TC8 RX 0xFF]  got=0xff  expected=0xff
+PASS  [TC8 TX 0x00]  got=0x00  expected=0x00
+PASS  [TC8 RX 0x00]  got=0x00  expected=0x00
+PASS  [TC8 TX 0xFF]  got=0xff  expected=0xff
+
+==========================================
+Results: 19 PASSED, 0 FAILED
+==========================================
+ALL TESTS PASSED
+$finish called at time : 9585 ns : File "D:/HK252/LSILogicDesign/LAB/LAB2/spi_slave/spi_slave.srcs/sim_1/new/spi_slave_tb.v" Line 372
