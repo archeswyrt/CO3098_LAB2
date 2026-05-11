@@ -1,0 +1,12 @@
+
+{ 
+    crc :  51290586908124159  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto e14541ecdc8d4f339b356db29f2b9a65 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_slave_tb_behav xil_defaultlib.spi_slave_tb xil_defaultlib.glbl" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:41:02" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/spi_slave_tb_behav/xsimk.exe\"   \"xsim.dir/spi_slave_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/spi_slave_tb_behav/obj/xsim_1.win64.obj\" \"C:\\Xilinx\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"C:\\Xilinx\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
