@@ -13,4 +13,4 @@ Before running the simulation:
   xsim.simulate.runtime = all
   ```
 
-- Click **OK** and re-launch simulation.
+- Click **OK** and re-launch simulation in  testbench file.
