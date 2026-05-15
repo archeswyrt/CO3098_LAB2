@@ -1,0 +1,46 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+=== SPI Master Testbench ===
+
+--- TC1: Load TX data (CNTL=01) ---
+  PASS [tays HIGH after load]  got=1  exp=1
+--- TC2: Load slave address 3 ---
+  PASS [HIGH after addr load]  got=1  exp=1
+--- TC3: Out-of-range slave address (200) ---
+  PASS [ave) during transfer]  got=0xff  exp=0xff
+--- TC4: MOSI sequence + SS (TX=0xA5, addr=3) ---
+  PASS [red by master (0xA5)]  got=0xa5  exp=0xa5
+--- TC5: MISO captured into OUTPUT (slave sends 0x3C) ---
+  PASS [UTPUT=0x3C from MISO]  got=0x3c  exp=0x3c
+--- TC6: Full-duplex (TX=0xB7, MISO=0x4E) ---
+  PASS [TC6 MOSI=0xB7]  got=0xb7  exp=0xb7
+  PASS [TC6 OUTPUT=0x4E]  got=0x4e  exp=0x4e
+--- TC7: READY timing ---
+  PASS [EADY before transfer]  got=1  exp=1
+  PASS [DY=0 during transfer]  got=0  exp=0
+  PASS [till 0 while CNTL=11]  got=0  exp=0
+  PASS [ after CNTL released]  got=1  exp=1
+--- TC8: SS assertion/deassertion ---
+  PASS [1111 during transfer]  got=0xdf  exp=0xdf
+  PASS [=0xFF after transfer]  got=0xff  exp=0xff
+--- TC9: CNTL 01/10 ignored while busy ---
+  PASS [ith ignored mid-load]  got=1  exp=1
+--- TC10: No-op (CNTL=00) ---
+  PASS [ys HIGH with CNTL=00]  got=1  exp=1
+  PASS [0 SS=FF with CNTL=00]  got=0xff  exp=0xff
+--- TC11: Back-to-back transfers ---
+  PASS [C11 frame1 MOSI=0x12]  got=0x12  exp=0x12
+  PASS [1 frame1 OUTPUT=0xAB]  got=0xab  exp=0xab
+  PASS [C11 frame2 MOSI=0x34]  got=0x34  exp=0x34
+  PASS [1 frame2 OUTPUT=0xCD]  got=0xcd  exp=0xcd
+--- TC12: Boundary values ---
+  PASS [TC12 TX=0x00 MOSI]  got=0x00  exp=0x00
+  PASS [TC12 RX=0xFF OUTPUT]  got=0xff  exp=0xff
+  PASS [TC12 TX=0xFF MOSI]  got=0xff  exp=0xff
+  PASS [TC12 RX=0x00 OUTPUT]  got=0x00  exp=0x00
+
+==========================================
+Results: 24 PASSED,  0 FAILED
+==========================================
+ALL TESTS PASSED
+$finish called at time : 5405 ns : File "D:/HK252/LSILogicDesign/LAB/LAB2_bonus/spi_master/spi_master.srcs/sim_1/new/spi_master_tb.v" Line 411
