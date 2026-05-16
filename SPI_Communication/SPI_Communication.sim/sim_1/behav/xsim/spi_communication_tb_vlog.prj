@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../../SPI_Communication.srcs/sources_1/new/spi_communication.v" \
+"../../../../SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_master/spi_master.srcs/sources_1/new/spi_master.v" \
+"../../../../SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_slave/spi_slave.srcs/sources_1/new/spi_slave.v" \
+"../../../../SPI_Communication.srcs/sim_1/new/spi_communication_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

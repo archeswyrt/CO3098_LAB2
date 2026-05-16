@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sim_1/imports/CO3098_LAB2/spi_master/spi_master.srcs/sim_1/new/spi_master_tb.v,1778910717,verilog,,,,spi_master_tb,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sim_1/new/spi_communication_tb.v,1778935999,verilog,,,,spi_communication_tb,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_master/spi_master.srcs/sources_1/new/spi_master.v,1778935531,verilog,,D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_slave/spi_slave.srcs/sources_1/new/spi_slave.v,,spi_master,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_slave/spi_slave.srcs/sources_1/new/spi_slave.v,1778910718,verilog,,D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sim_1/new/spi_communication_tb.v,,spi_slave,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/new/spi_communication.v,1778931734,verilog,,D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_master/spi_master.srcs/sources_1/new/spi_master.v,,spi_communication,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
