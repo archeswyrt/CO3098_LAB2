@@ -1,0 +1,41 @@
+Time resolution is 1 ps
+=== SPI Communication Top Level Testbench ===
+
+--- TC1: Master sends 0xA5, slave receives ---
+  PASS [eceived from master)]  got=0xa5  expected=0xa5
+  PASS [ut (MISO from slave)]  got=0x00  expected=0x00
+
+--- TC2: Slave sends 0x3C, master receives ---
+  PASS [ut (MISO from slave)]  got=0x3c  expected=0x3c
+  PASS [eceived from master)]  got=0x00  expected=0x00
+
+--- TC3: Full-duplex (master TX=0xB7, slave TX=0x4E) ---
+  PASS [_output (from slave)]  got=0x4e  expected=0x4e
+  PASS [output (from master)]  got=0xb7  expected=0xb7
+
+--- TC4: Back-to-back transfers ---
+  PASS [frame1 master_output]  got=0xab  expected=0xab
+  PASS [ frame1 slave_output]  got=0x12  expected=0x12
+  PASS [frame2 master_output]  got=0xcd  expected=0xcd
+  PASS [ frame2 slave_output]  got=0x34  expected=0x34
+
+--- TC5: Boundary values (0x00 and 0xFF) ---
+  PASS [master_output (0x00)]  got=0x00  expected=0x00
+  PASS [ slave_output (0xFF)]  got=0xff  expected=0xff
+  PASS [master_output (0xFF)]  got=0xff  expected=0xff
+  PASS [ slave_output (0x00)]  got=0x00  expected=0x00
+
+--- TC6: Slave load when ready ---
+  Both ready initially
+  PASS [eceived correct data]  got=0xaa  expected=0xaa
+  PASS [ave's preloaded data]  got=0x55  expected=0x55
+
+--- TC7: Slave select line behaviour ---
+  PASS [h slave not selected]  got=0xzz  expected=0xzz
+  TC7 verified by visual inspection of waveform (SS[0] remains high)
+
+==========================================
+Results: 17 PASSED, 0 FAILED
+==========================================
+ALL TESTS PASSED
+$finish called at time : 7115 ns : File "D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sim_1/new/spi_communication_tb.v" Line 323

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/new/spi_communication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_communication
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_master/spi_master.srcs/sources_1/new/spi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sources_1/imports/CO3098_LAB2/spi_slave/spi_slave.srcs/sources_1/new/spi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/HCMUTK23/Major/LSI_Logic_Design/Project_vivado/SPI_Communication/SPI_Communication.srcs/sim_1/new/spi_communication_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_communication_tb
